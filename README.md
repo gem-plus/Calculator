@@ -1,5 +1,5 @@
 # projects
-#projects is a collecton of all past and upcoomming projects by Aditya Singh Chhauhan.
+#projects is a collecton of all past and upcomming projects by Aditya Singh Chauhan.
 
 🔗 Explore the coding universe of @AdityaSinghChauhan in one central hub! From web apps to ML magic, find all official projects neatly organized here.
 
