@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//checks for valid integer input
 int valCheck(int a)
 {
     int temp;
@@ -8,7 +9,7 @@ int valCheck(int a)
     if (temp != 1)
     {
         printf("invalid input \nquiting program...\n");
-        exit(1);
+        exit(Entered input isnt integer.);
     }
     else
     {
@@ -16,6 +17,7 @@ int valCheck(int a)
     }
 }
 
+//take an operator
 char function()
 {
     char operator;
@@ -39,6 +41,7 @@ int main()
     printf("Enter 2nd no.\n");
     b = valCheck(b);
 
+    // Perform calculation based on operator
     switch (operator)
     {
     case '+':
@@ -54,7 +57,7 @@ int main()
         if (b == 0)
         {
             printf("Divide by 'zero' is undifined.\nquiting program...\n");
-            exit(1);
+            exit(Divide by '0' is undifined.);
         }
         else
         {
@@ -66,7 +69,7 @@ int main()
         if (b == 0)
         {
             printf("Module by 'zero' is undifined.\nquiting program...\n");
-            exit(1);
+            exit(Module by '0' is undifined.);
         }
         else
         {
