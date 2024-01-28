@@ -9,7 +9,7 @@ int valCheck(int a)
     if (temp != 1)
     {
         printf("invalid input \nquiting program...\n");
-        exit(Entered input isnt integer.);
+        exit(EXIT_FAILURE);
     }
     else
     {
@@ -57,7 +57,7 @@ int main()
         if (b == 0)
         {
             printf("Divide by 'zero' is undifined.\nquiting program...\n");
-            exit(Divide by '0' is undifined.);
+            exit(EXIT_FAILURE);
         }
         else
         {
@@ -69,7 +69,7 @@ int main()
         if (b == 0)
         {
             printf("Module by 'zero' is undifined.\nquiting program...\n");
-            exit(Module by '0' is undifined.);
+            exit(EXIT_FAILURE);
         }
         else
         {
@@ -79,7 +79,7 @@ int main()
         }
     default:
         printf("invalid operator...\nquiting program...\n");
-        exit(1);
+        exit(EXIT_FAILURE);
     }
     return 0;
 }
