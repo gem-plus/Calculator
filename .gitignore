@@ -54,3 +54,4 @@ dkms.conf
 #configuration file
 .vscode
 *.json
+*.exe
