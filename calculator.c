@@ -80,7 +80,6 @@ int main()
         }
         else
         {
-
             printf("Your final answer is : %f \n", firstValue / secValue);
             break;
         }
@@ -94,7 +93,6 @@ int main()
         }
         else
         {
-
             printf("Your final answer is : %d \n", modIntA % modIntB);
             break;
         }
