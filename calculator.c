@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 // take a float and check if the float is valid
 float valCheck(float a)
 {
@@ -28,7 +27,6 @@ float valCheck(float a)
         return a;
     }
 }
-
 
 // take an operator and check if the operator is valid
 char function()
@@ -48,54 +46,74 @@ char function()
     }
 }
 
-
 int main()
 {
     float firstValue;
     float secValue;
+    char a;
 
-    printf("Enter 1st no.\n");
-    firstValue = valCheck(firstValue);
-
-    printf("Enter 2nd no.\n");
-    secValue = valCheck(secValue);
-
-    // Perform calculation based on operator
-    switch (function())
+    while (1)
     {
-    case '+':
-        printf("Your final answer is : %f\n", firstValue + secValue);
-        break;
-    case '-':
-        printf("Your final answer is : %f \n", firstValue - secValue);
-        break;
-    case '*':
-        printf("Your final answer is : %f \n", firstValue * secValue);
-        break;
-    case '/':
-        if (secValue == 0)
+        printf("Do you want to continue? (y/n)\n");
+        scanf(" %c", &a);
+        if (a == 'n')
         {
-            printf("Divide by 'zero' is UNDIFINED.\nquiting program...\n");
-            exit(EXIT_FAILURE);
+            printf("Thank you for using this program.\n");
+            exit(EXIT_SUCCESS);
         }
-        else
+        if (a == 'y')
         {
-            printf("Your final answer is : %f \n", firstValue / secValue);
-            break;
+            printf("Enter 1st no.\n");
+            firstValue = valCheck(firstValue);
+
+            printf("Enter 2nd no.\n");
+            secValue = valCheck(secValue);
+
+            // Perform calculation based on operator
+            switch (function())
+            {
+            case '+':
+                printf("Your final answer is : %f\n\n", firstValue + secValue);
+                break;
+            case '-':
+                printf("Your final answer is : %f \n\n", firstValue - secValue);
+                break;
+            case '*':
+                printf("Your final answer is : %f \n\n", firstValue * secValue);
+                break;
+            case '/':
+                if (secValue == 0)
+                {
+                    printf("Divide by 'zero' is UNDIFINED.\nquiting program...\n\n");
+                    exit(EXIT_FAILURE);
+                }
+                else
+                {
+                    printf("Your final answer is : %f \n\n", firstValue / secValue);
+                    break;
+                }
+            case '%':
+                int modIntA = (int)firstValue;
+                int modIntB = (int)secValue;
+                if (secValue == 0)
+                {
+                    printf("Module by 'zero' is UNDIFINED.\nquiting program...\n\n");
+                    exit(EXIT_FAILURE);
+                }
+                else
+                {
+                    printf("Your final answer is : %d \n\n", modIntA % modIntB);
+                    break;
+                }
+            }
         }
-    case '%':
-        int modIntA = (int)firstValue;
-        int modIntB = (int)secValue;
-        if (secValue == 0)
+        if (a != 'y' && a != 'n')
         {
-            printf("Module by 'zero' is UNDIFINED.\nquiting program...\n");
-            exit(EXIT_FAILURE);
+            printf("invalid input\n\n");
+            continue;
         }
-        else
-        {
-            printf("Your final answer is : %d \n", modIntA % modIntB);
-            break;
-        }
+        
+        
     }
     return 0;
 }
