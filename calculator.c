@@ -35,6 +35,8 @@ char function()
     printf("Enter the operator (+,-,*,/,%%):\t ");
     scanf(" %c", &operator);
 
+    while(getchar() != '\n');
+    
     if (operator!= '+' && operator!= '-' && operator!= '*' && operator!= '/' && operator!= '%')
     {
         printf("Invalid Operator \nquiting program...\n");
