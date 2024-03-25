@@ -1,10 +1,1 @@
-# projects
-#projects is a collecton of all past and upcomming projects by Aditya Singh Chauhan.
-
-🔗 Explore the coding universe of @AdityaSinghChauhan in one central hub! From web apps to ML magic, find all official projects neatly organized here.
-
-🌐 Dive into existing creations and brace yourself for future innovations. 🚧 Stay tuned for upcoming projects!
-
-🤝 Join the community, contribute, and be part of the coding journey. Clone, fork, or star your favorites!
-
-Welcome to the hub of Aditya Singh Chauhan's coding wonders. Happy coding! 🚀💻
+Calculator is the most basic program that every programmers has build . This repo holds journey from a simple calculator to a fully functional calaculator with user interface . I will learn and do stuff to it in mean time .
