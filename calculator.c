@@ -15,9 +15,8 @@
 // take a float and check if the float is valid
 float valCheck(float a)
 {
-    int temp;
-    temp = scanf(" %f", &a);
-    if (temp != 1)
+
+    if (scanf(" %f", &a) != 1)
     {
         printf("Invalid Value \nquiting program...\n");
         exit(EXIT_FAILURE);
